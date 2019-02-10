@@ -135,7 +135,7 @@ def main():
             db.add_row(row_data=record, table_name=record['type'].lower())
     db.export_csv(table_name=table, filename='data.csv')
     for ship_type in types:
-        db.export_csv(table_name=table,
+        db.export_csv(table_name=ship_type.lower(),
                       filename='{}.csv'.format(ship_type.lower()))
     return
 
