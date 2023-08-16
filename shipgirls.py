@@ -4,7 +4,7 @@ import requests
 import sqlite3
 import string
 import decimal
-import pandas
+#import pandas
 from sql_ops import SQLOps
 
 
